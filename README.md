@@ -908,6 +908,10 @@ As you can see there are a few options like `source` which is used to specify th
 
 Each time we run Crunz commands, it will look into the project's root directory to see if there's any user-modified configuration file. If the configuration file doesn't exists, it will use the one shipped with the package.
 
+## Setting the base cache directory
+
+You can change the base cache directory of crunz by setting the `CRUNZ_BASE_CACHE_DIR` environment variable.
+The default base cache directory is `\sys_get_temp_dir()`. The subdirectory `.crunz` is always added to the base cache directory.
 
 ## Development ENV flags
 
